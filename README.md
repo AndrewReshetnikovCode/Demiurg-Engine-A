@@ -31,13 +31,6 @@ This repository implements **Layer 1** only (physics substrate + 5 passive toys)
 | `docs/appendices/` | Appendices A–H from DESIGN.md |
 | `docs/agent_pipeline/` | Planner / Specialist / Benchmarker contracts |
 
-## Current phase
-
-**Phase 0 — Scaffolding** (not started). See DESIGN.md §3.3.
-
-Gate criterion: empty Vulkan window opens; CI green on Windows runner;
-placeholder textures generated at build time.
-
 ## Cross-cutting invariants (CI-enforced)
 
 See DESIGN.md §3.4. Summary:
@@ -49,18 +42,6 @@ See DESIGN.md §3.4. Summary:
 5. Cold-launch-to-playable ≤10 s on clean Windows Sandbox.
 6. Layer 2 readiness APIs (wind/water/rain/temp point queries) must not regress.
 7. Region files carry a version byte from Phase 1 onward.
-
-## Building
-
-**Windows (shipping target):**
-```powershell
-.\scripts\build.ps1 -Config Release -RunTests
-```
-
-**Linux / WSL (dev iteration on non-renderer subsystems):**
-```bash
-./scripts/build.sh --test
-```
 
 Prerequisites:
 - Vulkan SDK ≥ 1.3 (with `glslangValidator` on PATH)
