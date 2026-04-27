@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hFg8TEUcnpI=",
+  "success": true,
+  "projectFilePath": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\DemEn.Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.13\\microsoft.dotnet.ilcompiler.8.0.13.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.13\\microsoft.net.illink.tasks.8.0.13.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.13\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

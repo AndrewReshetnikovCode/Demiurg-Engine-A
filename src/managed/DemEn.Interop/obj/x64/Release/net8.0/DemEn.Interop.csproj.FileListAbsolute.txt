@@ -1,0 +1,11 @@
+C:\dev\DemEn\src\managed\DemEn.Interop\bin\x64\Release\net8.0\DemEn.Interop.deps.json
+C:\dev\DemEn\src\managed\DemEn.Interop\bin\x64\Release\net8.0\DemEn.Interop.dll
+C:\dev\DemEn\src\managed\DemEn.Interop\bin\x64\Release\net8.0\DemEn.Interop.pdb
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.AssemblyInfoInputs.cache
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.AssemblyInfo.cs
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.csproj.CoreCompileInputs.cache
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.dll
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\refint\DemEn.Interop.dll
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\DemEn.Interop.pdb
+C:\dev\DemEn\src\managed\DemEn.Interop\obj\x64\Release\net8.0\ref\DemEn.Interop.dll

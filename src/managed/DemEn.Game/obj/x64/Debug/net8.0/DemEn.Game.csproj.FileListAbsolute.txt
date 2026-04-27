@@ -1,0 +1,5 @@
+C:\dev\DemEn\src\managed\DemEn.Game\obj\x64\Debug\net8.0\DemEn.Game.csproj.AssemblyReference.cache
+C:\dev\DemEn\src\managed\DemEn.Game\obj\x64\Debug\net8.0\DemEn.Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\DemEn\src\managed\DemEn.Game\obj\x64\Debug\net8.0\DemEn.Game.AssemblyInfoInputs.cache
+C:\dev\DemEn\src\managed\DemEn.Game\obj\x64\Debug\net8.0\DemEn.Game.AssemblyInfo.cs
+C:\dev\DemEn\src\managed\DemEn.Game\obj\x64\Debug\net8.0\DemEn.Game.csproj.CoreCompileInputs.cache

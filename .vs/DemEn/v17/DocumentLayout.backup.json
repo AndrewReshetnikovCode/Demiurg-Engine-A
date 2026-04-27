@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\DemEn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|c:\\dev\\demen\\src\\managed\\demen.game\\toys\\windmill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|solutionrelative:src\\managed\\demen.game\\toys\\windmill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|c:\\dev\\demen\\src\\managed\\demen.game\\toys\\smoke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|solutionrelative:src\\managed\\demen.game\\toys\\smoke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|c:\\dev\\demen\\src\\managed\\demen.game\\toys\\sailboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|solutionrelative:src\\managed\\demen.game\\toys\\sailboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|c:\\dev\\demen\\src\\managed\\demen.game\\toys\\fallingleaf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|solutionrelative:src\\managed\\demen.game\\toys\\fallingleaf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|c:\\dev\\demen\\src\\managed\\demen.game\\toys\\itoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\managed\\DemEn.Game\\DemEn.Game.csproj|solutionrelative:src\\managed\\demen.game\\toys\\itoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Windmill.cs",
+              "DocumentMoniker": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Windmill.cs",
+              "RelativeDocumentMoniker": "src\\managed\\DemEn.Game\\Toys\\Windmill.cs",
+              "ToolTip": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Windmill.cs",
+              "RelativeToolTip": "src\\managed\\DemEn.Game\\Toys\\Windmill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:55:04.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Smoke.cs",
+              "DocumentMoniker": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Smoke.cs",
+              "RelativeDocumentMoniker": "src\\managed\\DemEn.Game\\Toys\\Smoke.cs",
+              "ToolTip": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Smoke.cs",
+              "RelativeToolTip": "src\\managed\\DemEn.Game\\Toys\\Smoke.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:54:58.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sailboat.cs",
+              "DocumentMoniker": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Sailboat.cs",
+              "RelativeDocumentMoniker": "src\\managed\\DemEn.Game\\Toys\\Sailboat.cs",
+              "ToolTip": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\Sailboat.cs",
+              "RelativeToolTip": "src\\managed\\DemEn.Game\\Toys\\Sailboat.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:54:44.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IToy.cs",
+              "DocumentMoniker": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\IToy.cs",
+              "RelativeDocumentMoniker": "src\\managed\\DemEn.Game\\Toys\\IToy.cs",
+              "ToolTip": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\IToy.cs",
+              "RelativeToolTip": "src\\managed\\DemEn.Game\\Toys\\IToy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:53:14.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FallingLeaf.cs",
+              "DocumentMoniker": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\FallingLeaf.cs",
+              "RelativeDocumentMoniker": "src\\managed\\DemEn.Game\\Toys\\FallingLeaf.cs",
+              "ToolTip": "C:\\dev\\DemEn\\src\\managed\\DemEn.Game\\Toys\\FallingLeaf.cs",
+              "RelativeToolTip": "src\\managed\\DemEn.Game\\Toys\\FallingLeaf.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowCcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:52:36.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

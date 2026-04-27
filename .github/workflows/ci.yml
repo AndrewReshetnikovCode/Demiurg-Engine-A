@@ -1,0 +1,106 @@
+# =============================================================================
+# DemEn CI — Phase 0 stub.
+# =============================================================================
+# Jobs grow per phase. At Phase 0 the gate is: Vulkan window opens, CI green
+# on Windows runner, placeholder textures generated at build time.
+# Invariants 1–7 (§3.4) are wired in as they become applicable:
+#   - invariant #1: added in Phase 4 (allocation benchmark)
+#   - invariant #2: added in Phase 5 (determinism replay)
+#   - invariant #3: always-on (path-based rule below)
+#   - invariant #4: always-on (interface-drift job below)
+#   - invariant #5: added in Phase 8 (cold-launch timer)
+#   - invariant #6: added in Phase 5 (API presence check)
+#   - invariant #7: added in Phase 1 (region header version byte)
+# =============================================================================
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Vulkan SDK
+        uses: humbletim/install-vulkan-sdk@v1.2
+        with: { version: 1.3.280.0 }
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '8.0.x' }
+      - name: Build (Release)
+        shell: pwsh
+        run: ./scripts/build.ps1 -Config Release -RunTests
+
+  build-linux-dev:
+    # Non-shipping, agent iteration only. Skips renderer subsystem.
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++-12 python3 libvulkan-dev glslang-tools
+      - name: Build
+        env: { CONFIG: Release }
+        run: ./scripts/build.sh --test
+
+  invariant-3-no-asm-without-benchmark:
+    # Any .asm file added or modified must ship with a sibling .bench.cpp.
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Enforce invariant #3
+        run: ./ci/check_asm_has_benchmark.sh
+
+  invariant-4-interface-drift:
+    # Any change under src/native/include/ requires the "planner-sign-off"
+    # label on the PR before it can merge.
+    runs-on: ubuntu-22.04
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Check interface drift
+        env: { LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }} }
+        run: ./ci/check_interface_drift.sh
+
+  placeholder-textures:
+    # Phase 0 gate: the texgen script runs under CI Python without extra deps.
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Generate placeholders
+        run: |
+          python3 tools/placeholder_texgen/generate.py \
+            --manifest tools/placeholder_texgen/materials.json \
+            --out /tmp/tex --stamp /tmp/tex/.stamp
+          test $(ls /tmp/tex/*.generated.png | wc -l) -ge 8
+  texgen-deterministic:
+    # Invariant: Appendix H.2 — placeholder output must be byte-identical
+    # across runs regardless of PYTHONHASHSEED.
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: ./ci/check_texgen_deterministic.sh
+  invariant-8-optimization-justification:
+    # Mechanical keyword gate for invariant #8 (DESIGN.md §2.11).
+    # Triggered by SIMD intrinsics, unroll pragmas, custom allocators,
+    # cache-line alignment, or .asm files. Planner reviews content.
+    runs-on: ubuntu-22.04
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Enforce invariant #8
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          DIFF_RANGE: origin/${{ github.base_ref }}...HEAD
+        run: ./ci/check_optimization_justification.sh

@@ -1,0 +1,18 @@
+{
+  "_comment": "Appendix H — natural-material placeholders for Layer 1 (§2.10).",
+  "_comment2": "Colours: flat RGB base + simple low-amplitude noise. NOT checkerboards.",
+  "_comment3": "Distinguishable-but-readable: no neighbouring pair < ~delta-E 20.",
+  "size": 128,
+  "seed": 20260424,
+  "materials": [
+    { "name": "stone",   "rgb": [120, 120, 124], "noise": 0.10, "grain": "fine" },
+    { "name": "dirt",    "rgb": [ 94,  66,  42], "noise": 0.14, "grain": "coarse" },
+    { "name": "grass",   "rgb": [ 78, 134,  58], "noise": 0.12, "grain": "medium" },
+    { "name": "sand",    "rgb": [214, 196, 142], "noise": 0.08, "grain": "fine" },
+    { "name": "water",   "rgb": [ 48,  96, 158], "noise": 0.05, "grain": "smooth" },
+    { "name": "wood",    "rgb": [132,  92,  54], "noise": 0.10, "grain": "streak" },
+    { "name": "leaves",  "rgb": [ 56, 108,  48], "noise": 0.16, "grain": "coarse" },
+    { "name": "snow",    "rgb": [236, 240, 246], "noise": 0.06, "grain": "fine" },
+    { "name": "gravel",  "rgb": [148, 144, 138], "noise": 0.20, "grain": "coarse" }
+  ]
+}
