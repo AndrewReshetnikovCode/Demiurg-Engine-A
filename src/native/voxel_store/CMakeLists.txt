@@ -18,3 +18,22 @@ target_link_libraries(demen_voxel_store
 target_include_directories(demen_voxel_store PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
+
+add_executable(demen_voxel_grid_debug
+    codex/arg_parser.cpp
+    codex/console_render.cpp
+    codex/file_ops.cpp
+    codex/gas_generator.cpp
+    codex/random_world_initializer.cpp
+    codex/random_world_initializer_main.cpp
+    codex/world_fill.cpp
+    codex/world_init.cpp
+)
+set_target_properties(demen_voxel_grid_debug PROPERTIES
+    OUTPUT_NAME "voxel_grid_debug"
+)
+target_link_libraries(demen_voxel_grid_debug
+    PRIVATE
+        demen::voxel_store
+        demen::compile_options
+)
